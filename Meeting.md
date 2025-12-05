@@ -33,6 +33,9 @@
 
   * Cách tính giá theo dung lượng + băng thông.
   * Độ bền (durability), versioning, lifecycle rule (tự động chuyển tier, xóa file cũ).
+  * **So sánh AWS S3 và Cloudian** (nếu CSC dùng Cloudian):
+    * Ưu/nhược điểm về **chi phí** (đặc biệt là phí băng thông/egress) so với AWS S3?
+    * **Hiệu năng** (tốc độ upload/download) và tính **tương thích** (S3 API compatibility) có đạt 100% không?
 
 ---
 
@@ -164,3 +167,28 @@
     * Cấu hình VPS/DB/S3/File service.
     * SLA, backup, bảo mật đi kèm.
     * **Tổng chi phí/tháng** và chiết khấu nếu trả 6–12 tháng.
+
+---
+
+## 7. Các câu hỏi bổ sung
+
+* **Hỗ trợ chuyển đổi (Migration)**:
+  * CSC có hỗ trợ **chuyển dữ liệu** từ nhà cung cấp cũ sang hạ tầng mới không?
+  * Chi phí chuyển đổi là miễn phí hay tính phí?
+  * Thời gian dự kiến và phương án để giảm thiểu downtime khi chuyển đổi.
+
+* **Khả năng mở rộng (Scalability)**:
+  * Quy trình **nâng cấp tài nguyên** (CPU/RAM/Disk) diễn ra như thế nào? Có cần tắt server (downtime) không?
+  * Có hỗ trợ Auto-scaling không (tự động tăng giảm tài nguyên theo tải)?
+
+* **Vị trí máy chủ (Datacenter Location)**:
+  * Datacenter đặt tại đâu (Hà Nội, TP.HCM, hay nước ngoài)?
+  * Kết nối quốc tế và trong nước băng thông như thế nào?
+
+* **Dùng thử & PoC (Proof of Concept)**:
+  * Có chính sách **dùng thử (trial)** hoặc chạy PoC trước khi ký hợp đồng dài hạn không?
+  * Thời gian dùng thử bao lâu?
+
+* **Hợp đồng & Pháp lý**:
+  * Các chứng chỉ bảo mật (ISO 27001,...) mà hạ tầng đạt được.
+  * Chính sách hủy hợp đồng trước hạn hoặc hoàn tiền nếu chất lượng không đảm bảo.
